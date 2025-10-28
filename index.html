@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Tracker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="min-h-screen bg-[#ecffff]">
+    <div class="container mx-auto px-4 py-8">
+        <main class="max-w-4xl mx-auto">
+            <div class="bg-[#A6E3E9] rounded-xl shadow-lg p-6">
+                <h2 class="text-2xl font-bold text-[#1ec5ce] mb-6 text-center">30-Day Food Tracker</h2>
+
+                <div class="flex justify-between mb-4">
+                    <button id="prevMonth" class="text-[#1ec5ce] ">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <h3 id="currentMonth" class="text-xl font-semibold text-[#1ec5ce]">July 2023</h3>
+                    <button id="nextMonth" class="text-[#1ec5ce] ">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <div class="grid grid-cols-7 gap-2 mb-4">
+                    <div class="text-center font-semibold text-[#1ec5ce]">Sun</div>
+                    <div class="text-center font-semibold text-[#1ec5ce]">Mon</div>
+                    <div class="text-center font-semibold text-[#1ec5ce]">Tue</div>
+                    <div class="text-center font-semibold text-[#1ec5ce]">Wed</div>
+                    <div class="text-center font-semibold text-[#1ec5ce]">Thu</div>
+                    <div class="text-center font-semibold text-[#1ec5ce]">Fri</div>
+                    <div class="text-center font-semibold text-[#1ec5ce]">Sat</div>
+                </div>
+
+                <div id="calendar" class="grid grid-cols-7 gap-2 mb-6">
+                </div>
+
+                <div class="border-t border-blue-200 pt-6">
+                    <h3 class="text-xl text-center font-semibold text-[#1ec5ce] mb-4">Today's Food Intake</h3>
+
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <div class="bg-[#E3FDFD] p-4 rounded-lg">
+                            <div class="flex items-center justify-between mb-2">
+                                <h4 class="font-semibold text-[#1ec5ce]">Morning</h4>
+                            </div>
+                            <button id="morningBtn" class="w-fit px-6 py-2 bg-blue-100 text-[#1ec5ce] rounded-lg">
+                                <i class="far fa-square mr-2"></i> Mark as taken
+                            </button>
+                        </div>
+
+                        <div class="bg-[#E3FDFD] p-4 rounded-lg">
+                            <div class="flex items-center justify-between mb-2">
+                                <h4 class="font-semibold text-[#1ec5ce]">Noon</h4>
+                            </div>
+                            <button id="noonBtn" class="w-fit px-6 py-2 bg-blue-100 text-[#1ec5ce] rounded-lg">
+                                <i class="far fa-square mr-2"></i> Mark as taken
+                            </button>
+                        </div>
+
+                        <div class="bg-[#E3FDFD] p-4 rounded-lg">
+                            <div class="flex items-center justify-between mb-2">
+                                <h4 class="font-semibold text-[#1ec5ce]">Night</h4>
+                            </div>
+                            <button id="nightBtn" class="w-fit px-6 py-2 bg-blue-100 text-[#1ec5ce] rounded-lg">
+                                <i class="far fa-square mr-2"></i> Mark as taken
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
